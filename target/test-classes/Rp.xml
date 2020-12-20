@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" thread-count="5" >
+<!-- <listeners>
+		<listener class-name="com.a2j.base.TestListener" />
+	</listeners> -->
+<!-- <parameter name="susername" value="admin"></parameter>
+<parameter name="ppwd" value="manager"></parameter> -->
+  <test thread-count="5" name="Test">
+    <classes>
+        <class name="com.a2j.tests.RpTest"/>
+        <class name="com.a2j.tests.RpMyCasesTest">
+        
+        
+      </class>
+  
+    
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

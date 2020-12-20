@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" thread-count="2">
+<listeners>
+		<listener class-name="utility.Listner" />
+	</listeners> 
+<!-- <parameter name="susername" value="admin"></parameter>
+<parameter name="ppwd" value="manager"></parameter> -->
+  <test  name="Test">
+    <classes>
+        <class name="com.a2j.tests.LoginTest"/>
+        <class name="com.a2j.tests.Dashboard_ProfileTest"/>
+         <class name="com.a2j.tests.RegisterTest"/> 
+        <class name="com.a2j.tests.EditProfileTest"/>
+        <class name="com.a2j.tests.Dashboard_ProfileTest"/>
+        <class name="com.a2j.tests.RequestIrpTest"/>
+        <class name="com.a2j.tests.RpTest"/>
+        <class name="com.a2j.tests.CaseListTest">
+        
+      </class>
+  
+    
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.a2j.tests.FCFileClaimTest">
+        <methods>
+          <include name="savedetailsbtn"/>
+          <include name="loginTest"/>
+          <include name="confirmsubmitsbtn"/>
+          <include name="procedbtn"/>
+          <include name="loginbutton"/>
+          <include name="submitclaimdatabtn"/>
+          <include name="verifyloginpasswordTextBox1"/>
+          <include name="verifyloginuserTextBox"/>
+          <include name="claimbtn"/>
+          <include name="claimdata"/>
+          <include name="cin"/>
+          <include name="formC"/>
+          <include name="submitbtn"/>
+          <include name="filecliam"/>
+          <include name="readcliam"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.a2j.tests.FCFileClaimTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

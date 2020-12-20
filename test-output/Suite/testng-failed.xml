@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utility.Listner"/>
+  </listeners>
+  <test thread-count="2" name="Test(failed)">
+    <classes>
+      <class name="com.a2j.tests.RpTest">
+        <methods>
+          <include name="downlaoadfrom2"/>
+          <include name="verifyloginuserTextBox"/>
+          <include name="caseid"/>
+          <include name="caserequests"/>
+          <include name="verifyloginpasswordTextBox1"/>
+          <include name="accept"/>
+          <include name="loginTest"/>
+          <include name="init"/>
+          <include name="loginbutton"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.a2j.tests.RpTest -->
+      <class name="com.a2j.tests.CaseListTest">
+        <methods>
+          <include name="verifyloginpasswordTextBox1"/>
+          <include name="uploadbtn"/>
+          <include name="verifyloginuserTextBox"/>
+          <include name="caseid"/>
+          <include name="testUpload"/>
+          <include name="init"/>
+          <include name="loginTest"/>
+          <include name="confirmrp"/>
+          <include name="loginbutton"/>
+          <include name="caselist"/>
+        </methods>
+      </class> <!-- com.a2j.tests.CaseListTest -->
+      <class name="com.a2j.tests.EditProfileTest">
+        <methods>
+          <include name="getReport"/>
+          <include name="loginTest"/>
+          <include name="fcname"/>
+          <include name="fccompany"/>
+          <include name="loginbutton"/>
+          <include name="Reportsetup"/>
+          <include name="fcemail"/>
+          <include name="verifyloginpasswordTextBox1"/>
+          <include name="verifyEditedData"/>
+          <include name="verifyloginuserTextBox"/>
+          <include name="fcid"/>
+          <include name="saveeditdetails"/>
+          <include name="endTest"/>
+          <include name="fcwebsite"/>
+          <include name="editTest"/>
+          <include name="init"/>
+          <include name="myprofile"/>
+          <include name="fcstate"/>
+          <include name="fcaddress"/>
+          <include name="edit_btn"/>
+        </methods>
+      </class> <!-- com.a2j.tests.EditProfileTest -->
+      <class name="com.a2j.tests.RequestIrpTest">
+        <methods>
+          <include name="loginbutton"/>
+          <include name="verifyloginpasswordTextBox1"/>
+          <include name="corporatedebator"/>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="state"/>
+          <include name="namerp"/>
+          <include name="verifyloginuserTextBox"/>
+          <include name="search"/>
+          <include name="reqbtn2"/>
+          <include name="requestirp"/>
+          <include name="cin"/>
+          <include name="irp"/>
+          <include name="campnytoken"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.a2j.tests.RequestIrpTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
