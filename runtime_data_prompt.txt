@@ -1,0 +1,84 @@
+You are a senior SDET working on a Playwright + Cucumber (TypeScript) automation framework.
+
+I need to implement a runtime data persistence mechanism to support a scenario where:
+
+- In T0 execution (today), I approve a transaction and capture important details (transactionId, creditAccount, bankAccount, status, etc.)
+- In T1 execution (next day), I must reuse the same saved data to validate the application state
+- The solution must persist data across executions (not just in memory)
+
+Requirements:
+
+1. Create a reusable utility class:
+   File path: src/utils/runtimeDataHelper.ts
+
+2. This utility should:
+   - Read/write JSON file from: src/runtimeData/checkDepositState.json
+   - Auto-create folder and file if not present
+   - Provide methods:
+     - readAll()
+     - writeAll()
+     - save(key: string, value: any)
+     - get(key: string)
+     - remove(key: string)
+
+3. Use Node.js fs and path modules
+
+4. Data structure:
+
+{
+  "TEST_KEY": {
+    "transactionId": "string",
+    "creditAccount": "string",
+    "bankAccount": "string",
+    "transactionStatus": "string",
+    "savedAt": "string"
+  }
+}
+
+5. Provide full implementation of the utility class
+
+Step Definition Integration:
+
+6. In Cucumber step definitions:
+
+T0 Step (Save Data)
+Create a step:
+Then I approve the transaction and save details for next day validation with key {string}
+
+Implementation should:
+- Read values from page methods:
+  - getCreditAccount()
+  - getTransactionStatus()
+  - getBankAccount()
+- Get transactionId from this.checkDepositData
+- Save using RuntimeDataHelper.save()
+
+T1 Step (Read + Validate Data)
+Create step:
+Then I load saved runtime data with key {string} and validate next day details
+
+Implementation should:
+- Read data using RuntimeDataHelper.get()
+- Throw error if not found
+- Use saved transactionId to search
+- Validate:
+  - creditAccount
+  - bankAccount
+  - transactionStatus (if applicable)
+
+Additional Requirements:
+
+7. Use TypeScript types properly
+8. Assume CustomWorld is already defined
+9. Add proper error handling
+10. Add console logs for debugging
+11. Keep code clean and production-ready
+
+Output Expected:
+
+- Complete runtimeDataHelper.ts
+- Step definitions for T0 and T1
+- No pseudo code — only working code
+- Follow best practices
+
+Do NOT skip any part. Generate full implementation.
